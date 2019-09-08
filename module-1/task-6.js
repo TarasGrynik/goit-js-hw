@@ -7,4 +7,4 @@ while (true) {
   total += Number(input);
 }
 
-alert(total);
+alert(`Загальна сума чисел рівна ${total}`);
