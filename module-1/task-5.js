@@ -5,41 +5,40 @@ let deliveryPrice;
 
 if (country === 'китай') {
   deliveryPrice = 100;
-}
-
-if (country === 'чили') {
+  console.log(`Доставка в ${country} буде коштувати ${deliveryPrice} кредитов`);
+} else if (country === 'чили') {
   deliveryPrice = 250;
-}
-
-if (country === 'австралия') {
+  console.log(`Доставка в ${country} буде коштувати ${deliveryPrice} кредитов`);
+} else if (country === 'австралия') {
   deliveryPrice = 170;
-}
-
-if (country === 'индия') {
+  console.log(`Доставка в ${country} буде коштувати ${deliveryPrice} кредитов`);
+} else if (country === 'индия') {
   deliveryPrice = 80;
-}
-
-if (country === 'ямайка') {
+  console.log(`Доставка в ${country} буде коштувати ${deliveryPrice} кредитов`);
+} else if (country === 'ямайка') {
   deliveryPrice = 100;
+  console.log(`Доставка в ${country} буде коштувати ${deliveryPrice} кредитов`);
+} else {
+  alert('В вашей стране доставка не доступна!');   
 }
 
 
-switch (country) {
-  case 'китай':
-    console.log(`Доставка в ${country} буде коштувати ${deliveryPrice} кредитов`);
-    break;
-  case 'чили':
-    console.log(`Доставка в ${country} буде коштувати ${deliveryPrice} кредитов`);
-    break;
-  case 'австралия':
-    console.log(`Доставка в ${country} буде коштувати ${deliveryPrice} кредитов`);
-    break;
-  case 'индия':
-    console.log(`Доставка в ${country} буде коштувати ${deliveryPrice} кредитов`);
-    break;
-  case 'Ямайка':
-    console.log(`Доставка в ${country} буде коштувати ${deliveryPrice} кредитов`);
-    break;
-  default:
-    alert('В вашей стране доставка не доступна!');   
-}
+// switch (country) {
+//   case 'китай':
+//     console.log(`Доставка в ${country} буде коштувати ${deliveryPrice} кредитов`);
+//     break;
+//   case 'чили':
+//     console.log(`Доставка в ${country} буде коштувати ${deliveryPrice} кредитов`);
+//     break;
+//   case 'австралия':
+//     console.log(`Доставка в ${country} буде коштувати ${deliveryPrice} кредитов`);
+//     break;
+//   case 'индия':
+//     console.log(`Доставка в ${country} буде коштувати ${deliveryPrice} кредитов`);
+//     break;
+//   case 'Ямайка':
+//     console.log(`Доставка в ${country} буде коштувати ${deliveryPrice} кредитов`);
+//     break;
+//   default:
+//     alert('В вашей стране доставка не доступна!');   
+// }

@@ -1,10 +1,9 @@
 let total = 0;
 let input;
-
-while (true) {
+do {
   input = prompt('Введіть число...');
-  if (input === null) break;
   total += Number(input);
 }
+while (input !== null);
 
 alert(`Загальна сума чисел рівна ${total}`);
