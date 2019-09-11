@@ -10,12 +10,12 @@ const userAmountDroids = prompt('Яку кількість дроїдів вам
 
 if (userAmountDroids === null) {
   console.log(CANCELED_BY_USER);
-} else if (userAmountDroids !== null) {
-  totalPrice = userAmountDroids * pricePerDroid;
-}
-
-if (totalPrice > credits) {
-  console.log(NOT_ENOUGH_MONEY);
 } else {
-  console.log(`Вы купили ${userAmountDroids} дроидов, на счету осталось ${credits - totalPrice} кредитов.`);
+  totalPrice = userAmountDroids * pricePerDroid;
+
+  if (totalPrice > credits) {
+    console.log(NOT_ENOUGH_MONEY);
+  } else {
+    console.log(`Вы купили ${userAmountDroids} дроидов, на счету осталось ${credits - totalPrice} кредитов.`);
+  }
 }
