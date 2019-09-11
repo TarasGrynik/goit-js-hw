@@ -7,15 +7,11 @@ let message;
 
 const userPassword = prompt('Введіть ваш пароль...');
 
-if (userPassword === null) {
-  message = CANCELED_BY_USER;
-}
-
 if (userPassword === ADMIN_PASSWORD) {
   message = WELCOME;
-}
-
-if (userPassword !== ADMIN_PASSWORD && userPassword !== null) {
+} else if (userPassword === null) {
+  message = CANCELED_BY_USER;
+} else {
   message = ACCESS_DANIED;
 }
 
