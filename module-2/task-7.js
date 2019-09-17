@@ -10,8 +10,8 @@ const isLoginValid = function(login) {
 };
 
 const isLoginUnique = function(allLogins, login) {
-  const isUnique = allLogins.includes(login);
-  if (isUnique) {
+  const notUniqueLogin = allLogins.includes(login);
+  if (notUniqueLogin) {
     console.log('Такий логін вже використовується!');
     return false;
   }
