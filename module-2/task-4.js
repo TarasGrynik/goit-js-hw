@@ -1,9 +1,8 @@
 function formatString(string) {
   const customStrLength = 40;
-  const cutArray = string.slice(0, 40);
 
   if (string.length > customStrLength) {
-    return `${cutArray}...`;
+    return `${string.slice(0, 40)}...`;
   }
 
   return string;
