@@ -24,7 +24,7 @@ console.log(user.changeValue('premium', false));
 // user.hobby = 'javascript';
 // user.premium = 'false';
 
-function showResult(obj) {
+function showObjProp(obj) {
   const keys = Object.keys(obj);
   let value = '';
 
@@ -34,4 +34,4 @@ function showResult(obj) {
   return value;
 }
 
-console.log(showResult(user));
+console.log(showObjProp(user));
