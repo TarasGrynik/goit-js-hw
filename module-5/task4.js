@@ -10,22 +10,16 @@ class StringBuilder {
   }
 
   append(str) {
-    this._value = this._value.split(' ');
-    this._value.push(str);
-    this._value = this._value.join('');
+    this._value = this._value.concat(str);
   }
 
   prepend(str) {
-    this._value = this._value.split('');
-    this._value.unshift(str);
-    this._value = this._value.join('');
+    this._value = str.concat(this._value);
   }
 
   pad(str) {
-    this._value = this._value.split('');
-    this._value.unshift(str);
-    this._value.push(str);
-    this._value = this._value.join('');
+    this._value = this._value.concat(str);
+    this._value = str.concat(this._value);
   }
 }
 
