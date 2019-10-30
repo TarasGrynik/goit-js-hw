@@ -32,8 +32,3 @@ img {
 #controls {
   margin: 100px;
 }
-
-#boxes > div:first-child {
-  width: 30px;
-  height: 30px;
-}
