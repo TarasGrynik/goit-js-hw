@@ -10,11 +10,11 @@ const ingredients = [
 const ingredientItem = document.querySelector('#ingredients');
 
 function getIngredients(list, parent) {
-  parent.appendChild(
-    list.map(item => {
+  parent.append(
+    ...list.map(item => {
       const listItem = document.createElement('li');
       listItem.textContent = item;
-      return ingredientItem.appendChild(listItem);
+      return listItem;
     }),
   );
 }
